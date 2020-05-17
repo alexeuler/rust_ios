@@ -1,0 +1,11 @@
+[package]
+name = "rust"
+version = "0.1.0"
+authors = ["alex"]
+edition = "2018"
+
+[lib]
+name = "rust"
+crate-type = ["staticlib", "cdylib"]
+
+[dependencies]

@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA025B4B247177DD00271BE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA025B4A247177DD00271BE9 /* AppDelegate.swift */; };
+		FA025B4D247177DD00271BE9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA025B4C247177DD00271BE9 /* SceneDelegate.swift */; };
+		FA025B4F247177DD00271BE9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA025B4E247177DD00271BE9 /* ContentView.swift */; };
+		FA025B51247177DF00271BE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA025B50247177DF00271BE9 /* Assets.xcassets */; };
+		FA025B54247177DF00271BE9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA025B53247177DF00271BE9 /* Preview Assets.xcassets */; };
+		FA025B57247177DF00271BE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA025B55247177DF00271BE9 /* LaunchScreen.storyboard */; };
+		FA025B62247177DF00271BE9 /* RustIosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA025B61247177DF00271BE9 /* RustIosTests.swift */; };
+		FA025B6D247177DF00271BE9 /* RustIosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA025B6C247177DF00271BE9 /* RustIosUITests.swift */; };
+		FA025B8024717BA300271BE9 /* RustGreeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA025B7F24717BA300271BE9 /* RustGreeting.swift */; };
+		FA025B8224717ECF00271BE9 /* librust.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA025B7B2471789100271BE9 /* librust.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA025B5E247177DF00271BE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA025B3F247177DD00271BE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA025B46247177DD00271BE9;
+			remoteInfo = RustIos;
+		};
+		FA025B69247177DF00271BE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA025B3F247177DD00271BE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA025B46247177DD00271BE9;
+			remoteInfo = RustIos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA025B47247177DD00271BE9 /* RustIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RustIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA025B4A247177DD00271BE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA025B4C247177DD00271BE9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FA025B4E247177DD00271BE9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FA025B50247177DF00271BE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA025B53247177DF00271BE9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA025B56247177DF00271BE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA025B58247177DF00271BE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA025B5D247177DF00271BE9 /* RustIosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RustIosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA025B61247177DF00271BE9 /* RustIosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RustIosTests.swift; sourceTree = "<group>"; };
+		FA025B63247177DF00271BE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA025B68247177DF00271BE9 /* RustIosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RustIosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA025B6C247177DF00271BE9 /* RustIosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RustIosUITests.swift; sourceTree = "<group>"; };
+		FA025B6E247177DF00271BE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA025B7B2471789100271BE9 /* librust.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librust.a; path = ../rust/target/universal/release/librust.a; sourceTree = "<group>"; };
+		FA025B7C247178C800271BE9 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		FA025B7D247178F200271BE9 /* rust.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rust.h; path = ../rust/rust.h; sourceTree = "<group>"; };
+		FA025B7E2471797600271BE9 /* RustBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RustBridgingHeader.h; sourceTree = "<group>"; };
+		FA025B7F24717BA300271BE9 /* RustGreeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RustGreeting.swift; sourceTree = "<group>"; };
+		FA025B832471819900271BE9 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA025B44247177DD00271BE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA025B8224717ECF00271BE9 /* librust.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA025B5A247177DF00271BE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA025B65247177DF00271BE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA025B3E247177DD00271BE9 = {
+			isa = PBXGroup;
+			children = (
+				FA025B832471819900271BE9 /* .gitignore */,
+				FA025B7D247178F200271BE9 /* rust.h */,
+				FA025B7E2471797600271BE9 /* RustBridgingHeader.h */,
+				FA025B49247177DD00271BE9 /* RustIos */,
+				FA025B60247177DF00271BE9 /* RustIosTests */,
+				FA025B6B247177DF00271BE9 /* RustIosUITests */,
+				FA025B48247177DD00271BE9 /* Products */,
+				FA025B7A2471789100271BE9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA025B48247177DD00271BE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA025B47247177DD00271BE9 /* RustIos.app */,
+				FA025B5D247177DF00271BE9 /* RustIosTests.xctest */,
+				FA025B68247177DF00271BE9 /* RustIosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA025B49247177DD00271BE9 /* RustIos */ = {
+			isa = PBXGroup;
+			children = (
+				FA025B4A247177DD00271BE9 /* AppDelegate.swift */,
+				FA025B4C247177DD00271BE9 /* SceneDelegate.swift */,
+				FA025B4E247177DD00271BE9 /* ContentView.swift */,
+				FA025B50247177DF00271BE9 /* Assets.xcassets */,
+				FA025B55247177DF00271BE9 /* LaunchScreen.storyboard */,
+				FA025B58247177DF00271BE9 /* Info.plist */,
+				FA025B52247177DF00271BE9 /* Preview Content */,
+				FA025B7F24717BA300271BE9 /* RustGreeting.swift */,
+			);
+			path = RustIos;
+			sourceTree = "<group>";
+		};
+		FA025B52247177DF00271BE9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FA025B53247177DF00271BE9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FA025B60247177DF00271BE9 /* RustIosTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA025B61247177DF00271BE9 /* RustIosTests.swift */,
+				FA025B63247177DF00271BE9 /* Info.plist */,
+			);
+			path = RustIosTests;
+			sourceTree = "<group>";
+		};
+		FA025B6B247177DF00271BE9 /* RustIosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA025B6C247177DF00271BE9 /* RustIosUITests.swift */,
+				FA025B6E247177DF00271BE9 /* Info.plist */,
+			);
+			path = RustIosUITests;
+			sourceTree = "<group>";
+		};
+		FA025B7A2471789100271BE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA025B7C247178C800271BE9 /* libresolv.tbd */,
+				FA025B7B2471789100271BE9 /* librust.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA025B46247177DD00271BE9 /* RustIos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA025B71247177DF00271BE9 /* Build configuration list for PBXNativeTarget "RustIos" */;
+			buildPhases = (
+				FA025B43247177DD00271BE9 /* Sources */,
+				FA025B44247177DD00271BE9 /* Frameworks */,
+				FA025B45247177DD00271BE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RustIos;
+			productName = RustIos;
+			productReference = FA025B47247177DD00271BE9 /* RustIos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA025B5C247177DF00271BE9 /* RustIosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA025B74247177DF00271BE9 /* Build configuration list for PBXNativeTarget "RustIosTests" */;
+			buildPhases = (
+				FA025B59247177DF00271BE9 /* Sources */,
+				FA025B5A247177DF00271BE9 /* Frameworks */,
+				FA025B5B247177DF00271BE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA025B5F247177DF00271BE9 /* PBXTargetDependency */,
+			);
+			name = RustIosTests;
+			productName = RustIosTests;
+			productReference = FA025B5D247177DF00271BE9 /* RustIosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA025B67247177DF00271BE9 /* RustIosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA025B77247177DF00271BE9 /* Build configuration list for PBXNativeTarget "RustIosUITests" */;
+			buildPhases = (
+				FA025B64247177DF00271BE9 /* Sources */,
+				FA025B65247177DF00271BE9 /* Frameworks */,
+				FA025B66247177DF00271BE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA025B6A247177DF00271BE9 /* PBXTargetDependency */,
+			);
+			name = RustIosUITests;
+			productName = RustIosUITests;
+			productReference = FA025B68247177DF00271BE9 /* RustIosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA025B3F247177DD00271BE9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = Alex;
+				TargetAttributes = {
+					FA025B46247177DD00271BE9 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					FA025B5C247177DF00271BE9 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = FA025B46247177DD00271BE9;
+					};
+					FA025B67247177DF00271BE9 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = FA025B46247177DD00271BE9;
+					};
+				};
+			};
+			buildConfigurationList = FA025B42247177DD00271BE9 /* Build configuration list for PBXProject "RustIos" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA025B3E247177DD00271BE9;
+			productRefGroup = FA025B48247177DD00271BE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA025B46247177DD00271BE9 /* RustIos */,
+				FA025B5C247177DF00271BE9 /* RustIosTests */,
+				FA025B67247177DF00271BE9 /* RustIosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA025B45247177DD00271BE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA025B57247177DF00271BE9 /* LaunchScreen.storyboard in Resources */,
+				FA025B54247177DF00271BE9 /* Preview Assets.xcassets in Resources */,
+				FA025B51247177DF00271BE9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA025B5B247177DF00271BE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA025B66247177DF00271BE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA025B43247177DD00271BE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA025B8024717BA300271BE9 /* RustGreeting.swift in Sources */,
+				FA025B4B247177DD00271BE9 /* AppDelegate.swift in Sources */,
+				FA025B4D247177DD00271BE9 /* SceneDelegate.swift in Sources */,
+				FA025B4F247177DD00271BE9 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA025B59247177DF00271BE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA025B62247177DF00271BE9 /* RustIosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA025B64247177DF00271BE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA025B6D247177DF00271BE9 /* RustIosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA025B5F247177DF00271BE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA025B46247177DD00271BE9 /* RustIos */;
+			targetProxy = FA025B5E247177DF00271BE9 /* PBXContainerItemProxy */;
+		};
+		FA025B6A247177DF00271BE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA025B46247177DD00271BE9 /* RustIos */;
+			targetProxy = FA025B69247177DF00271BE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA025B55247177DF00271BE9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA025B56247177DF00271BE9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA025B6F247177DF00271BE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA025B70247177DF00271BE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA025B72247177DF00271BE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"RustIos/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = RustIos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../rust/target/universal/release";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.alexey.karasev.RustIos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/RustBridgingHeader.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA025B73247177DF00271BE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"RustIos/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = RustIos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../rust/target/universal/release";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.alexey.karasev.RustIos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/RustBridgingHeader.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA025B75247177DF00271BE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RustIosTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.alexey.karasev.RustIosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RustIos.app/RustIos";
+			};
+			name = Debug;
+		};
+		FA025B76247177DF00271BE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RustIosTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.alexey.karasev.RustIosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RustIos.app/RustIos";
+			};
+			name = Release;
+		};
+		FA025B78247177DF00271BE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RustIosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.alexey.karasev.RustIosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RustIos;
+			};
+			name = Debug;
+		};
+		FA025B79247177DF00271BE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RustIosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.alexey.karasev.RustIosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RustIos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA025B42247177DD00271BE9 /* Build configuration list for PBXProject "RustIos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA025B6F247177DF00271BE9 /* Debug */,
+				FA025B70247177DF00271BE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA025B71247177DF00271BE9 /* Build configuration list for PBXNativeTarget "RustIos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA025B72247177DF00271BE9 /* Debug */,
+				FA025B73247177DF00271BE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA025B74247177DF00271BE9 /* Build configuration list for PBXNativeTarget "RustIosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA025B75247177DF00271BE9 /* Debug */,
+				FA025B76247177DF00271BE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA025B77247177DF00271BE9 /* Build configuration list for PBXNativeTarget "RustIosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA025B78247177DF00271BE9 /* Debug */,
+				FA025B79247177DF00271BE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA025B3F247177DD00271BE9 /* Project object */;
+}
